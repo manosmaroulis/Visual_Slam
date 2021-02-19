@@ -9,7 +9,6 @@
 #include <nav_msgs/Odometry.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <tf2_ros/transform_broadcaster.h>
-#include <tf2_ros/transform_listener.h>
 #include <cv_bridge/cv_bridge.h>
 
 #include "openvslam/system.h"
@@ -26,11 +25,6 @@
 #include <opencv2/videoio.hpp>
 #include <spdlog/spdlog.h>
 #include <popl.hpp>
-#include "openvslam/data/landmark.h"
-#include <pcl_conversions/pcl_conversions.h>
-#include <sensor_msgs/PointCloud2.h>
-#include <pcl_ros/point_cloud.h>
-#include <pcl/point_types.h>
 
 #ifdef USE_STACK_TRACE_LOGGER
 #include <glog/logging.h>
@@ -39,7 +33,7 @@
 #ifdef USE_GOOGLE_PERFTOOLS
 #include <gperftools/profiler.h>
 #endif
-typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
+
 
 void pose_odometry_pub(auto cam_pose_, auto pose_pub_, auto odometry_pub_){
     Eigen::Matrix3d rotation_matrix = cam_pose_.block(0, 0, 3, 3);
@@ -113,31 +107,6 @@ void pose_odometry_pub(auto cam_pose_, auto pose_pub_, auto odometry_pub_){
 }
 
 
-void cloud_point_pub(auto lms,auto cloud_pub){
-
-
-    
-
-    if (!lms.empty()){
-        PointCloud::Ptr cloud (new PointCloud);
-        cloud->header.frame_id = "base_link";
-        cloud->header.stamp = ros::Time::now().toNSec() / 1000;
-
-        cloud->width = lms.size();
-        cloud->height = 1;
-        cloud->is_dense = true;
-        // Eigen::Matrix<double, 3, 1> c = l
-        for( size_t i=0 ; i<lms.size();i++){
-            cloud->points.push_back(pcl::PointXYZ(lms[i]->get_pos_in_world()[0], lms[i]->get_pos_in_world()[1],lms[i]->get_pos_in_world()[2]));
-
-        }
-        cloud_pub.publish(cloud);
-    }
-
-}
-
-
-
 void mono_tracking(const std::shared_ptr<openvslam::config>& cfg,
                    const std::string& vocab_file_path, const unsigned int cam_num, const std::string& mask_img_path,
                    const float scale, const std::string& map_db_path) {
@@ -171,13 +140,12 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg,
     ros::NodeHandle nh;
     ros::Publisher camera_pose_publisher = nh.advertise<geometry_msgs::PoseStamped>("/openvslam/camera_pose", 1);
     ros::Publisher odometry_pub_publisher = nh.advertise<nav_msgs::Odometry>("/openvslam/odometry", 1);
-    ros::Publisher cloud_pub_publisher = nh.advertise<PointCloud> ("cloud_in", 100);
     ros::Rate loop_rate(10);
 
     unsigned int num_frame = 0;
 
     bool is_not_end = true;
-    std::vector<openvslam::data::landmark *> landmarks;
+    std::vector<openvslam::data::landmark *> landmarks = nullptr;
     // run the SLAM in another thread
     std::thread thread([&]() {
         
@@ -213,10 +181,8 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg,
             // std::vector<openvslam::data::landmark *> land_pos = 
             // Eigen::Matrix<double, 3, 1> c  = land_pos[0]->get_pos_in_world();
             landmarks = SLAM.print();
-            cloud_point_pub(landmarks,cloud_pub_publisher);
             // std::cout << &c << std::endl;
             loop_rate.sleep();
-
 
         }
 
