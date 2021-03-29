@@ -1,0 +1,8 @@
+prefix=/home/nitlab/catkin_ws/camera/openvslam/ros/devel
+
+Name: openvslam
+Description: Description of openvslam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: cv_bridge image_transport geometry_msgs std_msgs nav_msgs pcl_conversions pcl_ros tf2_ros tf2_geometry_msgs

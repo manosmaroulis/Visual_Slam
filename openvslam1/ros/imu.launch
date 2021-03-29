@@ -1,0 +1,4 @@
+<launch>
+     <node pkg = "imu_filter_madgwick type="imu_filter_node" name="ImuFilter">
+	<param name="_use_mag" value=false/>
+	<param name="_fixed_frame" type="string" value="camera_link"/>

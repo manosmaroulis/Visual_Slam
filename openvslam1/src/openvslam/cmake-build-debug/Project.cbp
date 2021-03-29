@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\g2o\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\DBoW2\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\camera\;CMake Files\data\;CMake Files\feature\;CMake Files\initialize\;CMake Files\io\;CMake Files\match\;CMake Files\module\;CMake Files\optimize\;CMake Files\optimize\g2o\;CMake Files\optimize\g2o\se3\;CMake Files\optimize\g2o\sim3\;CMake Files\publish\;CMake Files\solve\;CMake Files\util\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project">
+				<Option output="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/lib/libopenvslam.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_DBOW2"/>
+					<Add directory="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/3rd/json/include"/>
+					<Add directory="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/3rd/spdlog/include"/>
+					<Add directory="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/src"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project/fast">
+				<Option output="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/lib/libopenvslam.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_DBOW2"/>
+					<Add directory="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/3rd/json/include"/>
+					<Add directory="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/3rd/spdlog/include"/>
+					<Add directory="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/src"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/base.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/base.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/equirectangular.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/equirectangular.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/fisheye.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/fisheye.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/perspective.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/perspective.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/config.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/config.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/bow_database.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/bow_database.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/bow_vocabulary.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/camera_database.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/camera_database.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/common.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/common.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/frame.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/frame.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/frame_statistics.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/frame_statistics.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/graph_node.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/graph_node.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/keyframe.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/keyframe.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/landmark.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/landmark.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/map_database.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/map_database.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/orb_extractor.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/orb_extractor.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/orb_extractor_node.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/orb_extractor_node.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/orb_params.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/orb_params.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/global_optimization_module.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/global_optimization_module.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/base.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/base.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/bearing_vector.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/bearing_vector.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/perspective.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/perspective.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/io/map_database_io.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/io/map_database_io.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/io/trajectory_io.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/io/trajectory_io.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/mapping_module.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/mapping_module.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/area.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/area.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/bow_tree.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/bow_tree.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/fuse.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/fuse.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/projection.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/projection.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/robust.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/robust.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/stereo.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/stereo.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/frame_tracker.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/frame_tracker.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/initializer.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/initializer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/keyframe_inserter.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/keyframe_inserter.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/local_map_cleaner.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/local_map_cleaner.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/local_map_updater.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/local_map_updater.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/loop_bundle_adjuster.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/loop_bundle_adjuster.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/loop_detector.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/loop_detector.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/relocalizer.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/relocalizer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/two_view_triangulator.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/two_view_triangulator.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/landmark_vertex.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/landmark_vertex.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/landmark_vertex_container.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/landmark_vertex_container.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/equirectangular_pose_opt_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/equirectangular_pose_opt_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/equirectangular_reproj_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/equirectangular_reproj_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/perspective_pose_opt_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/perspective_pose_opt_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/perspective_reproj_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/perspective_reproj_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/shot_vertex.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/shot_vertex.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/shot_vertex_container.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/shot_vertex_container.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/backward_reproj_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/backward_reproj_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/forward_reproj_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/forward_reproj_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/graph_opt_edge.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/graph_opt_edge.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/shot_vertex.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/shot_vertex.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/transform_vertex.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/transform_vertex.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/global_bundle_adjuster.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/global_bundle_adjuster.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/graph_optimizer.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/graph_optimizer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/local_bundle_adjuster.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/local_bundle_adjuster.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/pose_optimizer.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/pose_optimizer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/transform_optimizer.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/transform_optimizer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/publish/frame_publisher.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/publish/frame_publisher.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/publish/map_publisher.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/publish/map_publisher.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/common.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/common.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/essential_solver.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/essential_solver.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/fundamental_solver.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/fundamental_solver.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/homography_solver.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/homography_solver.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/pnp_solver.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/pnp_solver.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/sim3_solver.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/sim3_solver.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/system.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/system.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/tracking_module.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/tracking_module.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/type.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/converter.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/converter.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/image_converter.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/image_converter.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/random_array.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/random_array.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/stereo_rectifier.cc">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/stereo_rectifier.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/local/lib/cmake/g2o/g2oConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\g2o\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/local/lib/cmake/g2o/g2oConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\g2o\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/local/lib/cmake/g2o/g2oTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\g2o\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/local/lib/cmake/g2o/g2oTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\g2o\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/local/lib/cmake/DBoW2/DBoW2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\DBoW2\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/../../../../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/camera/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\camera\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/data/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\data\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/feature/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\feature\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/initialize/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\initialize\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/io/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\io\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/match/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\match\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/module/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\optimize\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\optimize\g2o\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/se3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\optimize\g2o\se3\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/optimize/g2o/sim3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\optimize\g2o\sim3\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/publish/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\publish\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/solve/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\solve\"/>
+		</Unit>
+		<Unit filename="/home/nitlab/catkin_ws/camera/openvslam/src/openvslam/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\util\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

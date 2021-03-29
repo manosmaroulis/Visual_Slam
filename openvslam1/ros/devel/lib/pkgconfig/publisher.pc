@@ -1,0 +1,8 @@
+prefix=/home/nitlab/catkin_ws/camera/openvslam/ros/devel
+
+Name: publisher
+Description: Description of publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: cv_bridge image_transport

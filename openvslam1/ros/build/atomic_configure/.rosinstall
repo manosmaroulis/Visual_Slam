@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/nitlab/catkin_ws/camera/openvslam/ros/devel/setup.sh

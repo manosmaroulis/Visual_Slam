@@ -1,0 +1,8 @@
+prefix=/home/nitlab/catkin_ws/camera/openvslam/ros/devel
+
+Name: octomap_rviz_plugins
+Description: Description of octomap_rviz_plugins
+Version: 0.2.3
+Cflags: -I/home/nitlab/catkin_ws/camera/openvslam/ros/src/octomap_rviz_plugins/include -I/usr/local/include
+Libs: -L${prefix}/lib -loctomap_rviz_plugins /usr/local/lib/liboctomap.so /usr/local/lib/liboctomath.so
+Requires: octomap_msgs roscpp rviz

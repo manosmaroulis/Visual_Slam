@@ -1,0 +1,8 @@
+prefix=/home/nitlab/catkin_ws/camera/openvslam/ros/install
+
+Name: rqt_tf_tree
+Description: Description of rqt_tf_tree
+Version: 0.6.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

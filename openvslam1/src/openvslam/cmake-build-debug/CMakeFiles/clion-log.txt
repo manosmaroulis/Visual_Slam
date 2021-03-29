@@ -1,0 +1,138 @@
+/home/nitlab/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nitlab/catkin_ws/camera/openvslam/src/openvslam
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/lib/ccache/cc
+-- Check for working C compiler: /usr/lib/ccache/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at /home/nitlab/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/share/cmake-3.17/Modules/FindOpenGL.cmake:305 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  /home/nitlab/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/share/cmake-3.17/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /usr/local/lib/cmake/g2o/g2oConfig.cmake:4 (find_dependency)
+  CMakeLists.txt:10 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+CMake Warning at CMakeLists.txt:28 (find_package):
+  By not providing "FindCXSparse.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "CXSparse",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "CXSparse" with any
+  of the following names:
+
+    CXSparseConfig.cmake
+    cxsparse-config.cmake
+
+  Add the installation prefix of "CXSparse" to CMAKE_PREFIX_PATH or set
+  "CXSparse_DIR" to a directory containing one of the above files.  If
+  "CXSparse" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+CMake Warning at CMakeLists.txt:33 (find_package):
+  By not providing "FindSuiteSparse.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "SuiteSparse", but CMake did not find one.
+
+  Could not find a package configuration file provided by "SuiteSparse" with
+  any of the following names:
+
+    SuiteSparseConfig.cmake
+    suitesparse-config.cmake
+
+  Add the installation prefix of "SuiteSparse" to CMAKE_PREFIX_PATH or set
+  "SuiteSparse_DIR" to a directory containing one of the above files.  If
+  "SuiteSparse" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+-- OpenMP: DISABLED
+-- SSE3 for ORB extraction (-msse3): DISABLED
+-- SSE for floating-point operation (-mfpmath=sse): DISABLED
+-- BoW framework: DBoW2 (found in /usr/local/include)
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.17)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+CMake Warning (dev) at CMakeLists.txt:41 (add_library):
+  Policy CMP0028 is not set: Double colon in target name means ALIAS or
+  IMPORTED target.  Run "cmake --help-policy CMP0028" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  Target "Project" links to target "Threads::Threads" but the target was not
+  found.  Perhaps a find_package() call is missing for an IMPORTED target, or
+  an ALIAS target is missing?
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at CMakeLists.txt:41 (add_library):
+  Policy CMP0003 should be set before this line.  Add code such as
+
+    if(COMMAND cmake_policy)
+      cmake_policy(SET CMP0003 NEW)
+    endif(COMMAND cmake_policy)
+
+  as early as possible but after the most recent call to
+  cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+  because target "Project" links to some libraries for which the linker must
+  search:
+
+    Threads::Threads, yaml-cpp, opencv_core, opencv_features2d, opencv_calib3d
+    rt
+
+  and other libraries with known full path:
+
+    /usr/local/lib/libg2o_types_sim3.so
+
+  CMake is adding directories in the second list to the linker search path in
+  case they are needed to find libraries from the first list (for backwards
+  compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+  or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+  more information.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: /home/nitlab/catkin_ws/camera/openvslam/src/openvslam/cmake-build-debug

@@ -1,0 +1,8 @@
+prefix=/home/nitlab/catkin_ws/camera/openvslam/ros/devel
+
+Name: cloud_pub
+Description: Description of cloud_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
